@@ -46,7 +46,10 @@ class MealDetailsScreen extends ConsumerWidget {
                   child: iconChild,
                 );
               },
-              child: Icon(isFavorite ? Icons.star : Icons.star_border),
+              child: Icon(
+                isFavorite ? Icons.star : Icons.star_border,
+                key: ValueKey(isFavorite),
+              ),
             ),
           )
         ],
